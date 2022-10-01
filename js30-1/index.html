@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+    <title>eco-sounds</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="./assets/svg/logo.svg" alt="logo" class="header-logo">
+            <div class="ad-menu">
+                <button id="ad-menu-btn">
+                    <span class="menu-line line1"></span>
+                    <span class="menu-line line2"></span>
+                    <span class="menu-line line3"></span>
+                </button>
+            </div>
+            <nav class="nav">
+                
+                <ul class="ul">
+                    <li class="li activ" id="forest">Лес</li>
+                    <li class="li" id="nightingale">Соловей</li>
+                    <li class="li" id="thrush">Дрозд</li>
+                    <li class="li" id="robin">Малиновка</li>
+                    <li class="li" id="lark">Жаровонок</li>
+                    <li class="li" id="warbler">Славка</li>
+                </ul>
+                <ul class="ul2">
+                    <li class="li2 activ" id="forest2">Лес</li>
+                    <li class="li2" id="nightingale2">Соловей</li>
+                    <li class="li2" id="thrush2">Дрозд</li>
+                    <li class="li2" id="robin2">Малиновка</li>
+                    <li class="li2" id="lark2">Жаровонок</li>
+                    <li class="li2" id="warbler2">Славка</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <button class="play"></button>
+        <button class="pause_"></button>
+        <audio src="./assets/audio/forest.mp3" id="audio" loop></audio>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="copyright">&#169;</span>
+            <span class="data-year">2022</span>
+            <a href="https://github.com/Al-r40" class="github">github</a>
+            <a href="https://rs.school/js-stage0/" class="footer-logo"></a>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
