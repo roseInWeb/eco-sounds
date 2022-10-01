@@ -1,0 +1,258 @@
+:root {
+    --filter-gold: invert(26%) sepia(8%) saturate(1164%) hue-rotate(7deg) brightness(87%) contrast(89%);
+    --filter-brightness: brightness(.85);
+    --filter-black: invert(100%) sepia(100%) saturate(6%) hue-rotate(326deg) brightness(92%) contrast(100%);;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    max-width: 1440px;
+    color: #ffffff;
+    background-color: #000000;
+    margin: auto;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+.header-container {
+    height: 60px;
+    max-width: 1440px;
+    margin: 0 20px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.header-logo:hover {
+    filter: var(--filter-gold);
+}
+
+.ad-menu {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 4;
+}
+
+#ad-menu-btn {
+    border: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-line {
+    width: 50px;
+    height: 3.5px;
+    background-color: #fff;
+    margin-bottom: 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.ul, .ul2 {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.li, .li2 {
+    padding: 0 20px;
+    color: #ffffff;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.li:nth-child(6) {
+    padding-right: 0;
+}
+
+.li:hover,
+.li2:hover {
+    filter: var(--filter-gold);
+}
+
+.activ {
+    color: #bdae82;
+    padding: 0 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.ul2 {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    font-size: 35px;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 3;
+    position: absolute;
+}
+
+.li2 {
+    padding: 15px;    
+    margin-left: 20px;
+}
+
+.menu-line:nth-child(3) {
+    margin-bottom: 0;
+}
+
+.main {
+    max-width: 1440px;
+    height: 810px;
+    background-image: url(./assets/img/forest.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.play {
+    background-image: url(./assets/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    width: 160px;
+    height: 160px;
+    transition: 0.3s;
+}
+
+.play_ {
+    display: none;
+}
+
+.pause {
+    background-image: url(./assets/svg/pause.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    width: 160px;
+    height: 160px;
+    transition: 0.3s;
+}
+
+.pause_ {
+    display: none;
+}
+
+.play:hover,
+.pause:hover {
+    filter: brightness(.85);
+}
+
+.footer {    
+    height: 60px;
+    max-width: 1440px;
+}
+
+.footer-container {
+    display: flex;
+    margin: 0 20px;
+    padding: 5px 20px;
+    align-items: center;
+}
+
+.copyright {
+    padding-right: 20px;
+}
+
+.github {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+}
+
+.github:hover {
+    filter: var(--filter-gold);
+}
+
+.footer-logo {
+    background-image: url(./assets/svg/rss.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 1s;
+    height: 50px;
+    width: 135px;
+    margin-left: auto;
+}
+
+.footer-logo:hover {
+    filter: var(--filter-gold);
+}
+
+@media (max-width: 820px) {
+    .ul {
+        display: none;
+    }
+
+    .ad-menu {
+        display: flex;
+        margin-left: auto;
+        right: 15px;
+        z-index: 5;
+        position: fixed;
+    }
+
+    #menu-btn-activ {
+    display: block;
+    /* list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: 100px; */
+    }
+
+    nav {
+        margin-right: auto;
+    }
+
+    .ul2 {
+        display: none;
+    }
+}
